@@ -16,29 +16,11 @@ const headerLinks = [
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
-  const { pathname, hash } = useLocation();
+  const { pathname } = useLocation();
   const toggle = useRef<HTMLButtonElement>(null);
-
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
-
-  useEffect(() => {
-    const targetId = hash.replace(/^#/, "");
-
-    if (targetId) {
-      const element = document.getElementById(targetId);
-      if (element) {
-        requestAnimationFrame(() => {
-          element.scrollIntoView({ behavior: "auto", block: "start" });
-        });
-        return;
-      }
-    }
-
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, [pathname, hash]);
-
   useEffect(() => {
     if (!open) return;
     const escape = (event: KeyboardEvent) => {
