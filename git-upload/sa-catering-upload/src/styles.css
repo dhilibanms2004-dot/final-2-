@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/layout.css";
+@import "./styles/sections.css";
+@import "./styles/responsive.css";
+@import "./styles/motion.css";
+
+@import "./styles/hero-header.css";
+
+@import "./styles/footer.css";

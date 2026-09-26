@@ -1,0 +1,32 @@
+{
+  "/": {
+    "name": "Home",
+    "title": "Vegetarian Wedding Catering in Chennai | S A Catering",
+    "description": "S A Catering brings 35 years of experience to vegetarian wedding catering, family functions and corporate events across Chennai and Chengalpattu. Enquire today."
+  },
+  "/about": {
+    "name": "Our story",
+    "title": "35 Years of Vegetarian Catering | About S A Catering",
+    "description": "Meet S A Catering, wedding specialists with 35 years of experience and over 1,500 events. Traditional vegetarian food and hospitality in Chennai and Chengalpattu."
+  },
+  "/menu": {
+    "name": "Our menu",
+    "title": "Vegetarian Catering Menu in Chennai | S.A. Catering",
+    "description": "Explore S.A. Catering's vegetarian wedding and event menu, from breakfast, lunch and dinner to tiffin, sweets, live counters, beverages and customised menu options."
+  },
+  "/gallery": {
+    "name": "Gallery",
+    "title": "Vegetarian Wedding Feast Inspiration | S A Catering",
+    "description": "Explore illustrative South Indian vegetarian food and celebration inspiration for your next event. Plan your wedding feast with S A Catering."
+  },
+  "/contact": {
+    "name": "Contact",
+    "title": "Contact S A Catering | Mannivakkam, Chennai & Chengalpattu",
+    "description": "Call S A Catering on +91 9444730391 for vegetarian catering in Chennai and Chengalpattu. Find our Mannivakkam address, WhatsApp, email and directions."
+  },
+  "/quote": {
+    "name": "Plan your event",
+    "title": "Get a Vegetarian Catering Quote | S A Catering Chennai",
+    "description": "Request a personalised vegetarian catering quote for your wedding, family celebration or corporate event. Share your date, location and guest count on WhatsApp."
+  }
+}
