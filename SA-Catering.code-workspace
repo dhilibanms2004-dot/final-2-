@@ -1,0 +1,16 @@
+{
+  "folders": [{ "name": "S A Catering Website", "path": "." }],
+  "settings": {},
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [{
+      "label": "Start website preview",
+      "type": "shell",
+      "command": "npm run dev",
+      "osx": { "command": "bash ./scripts/start-preview.sh" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }]
+  }
+}
