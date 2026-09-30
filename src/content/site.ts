@@ -1,7 +1,17 @@
-import feast from "../assets/wedding-feast.jpg";
-import breakfast from "../assets/menu-tiffin.jpg";
-import bananaLeaf from "../assets/menu-banana-leaf.jpg";
-import event from "../assets/sa-catering-event.jpg";
+import bananaLeaf from "../assets/catering/01-banana-leaf-feast.webp";
+import event from "../assets/catering/02-wedding-catering-service.webp";
+import breakfast from "../assets/catering/03-breakfast.webp";
+import lunch from "../assets/catering/04-lunch-wedding-feast.webp";
+import dinner from "../assets/catering/05-dinner.webp";
+import tiffin from "../assets/catering/06-tiffin-refreshments.webp";
+import traditionalSweets from "../assets/catering/07-traditional-sweets.webp";
+import chaatStall from "../assets/catering/08-chaat-stall.webp";
+import roti from "../assets/catering/09-roti-breads.webp";
+import desserts from "../assets/catering/10-dessert-selection.webp";
+import soupsJuices from "../assets/catering/11-soups-juices.webp";
+import snackStall from "../assets/catering/12-snack-food-stall.webp";
+import liveCounters from "../assets/catering/13-live-counters.webp";
+const feast = lunch;
 
 // Edit business information here. Contact details are reused throughout the site.
 export const business = {
@@ -20,6 +30,21 @@ export const whatsappUrl = (
   message = "Hello S A Catering, I would like to discuss catering for my event.",
 ) => `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(message)}`;
 export const images = { feast, breakfast, bananaLeaf, event };
+export const galleryImages = [
+  { src: bananaLeaf, alt: "Traditional vegetarian banana-leaf feast" },
+  { src: event, alt: "Wedding catering service in mustard-yellow uniforms" },
+  { src: breakfast, alt: "Idli, medu vada and ven pongal breakfast" },
+  { src: lunch, alt: "South Indian wedding lunch on a banana leaf" },
+  { src: dinner, alt: "Vegetable biryani, channa masala and chapathi" },
+  { src: tiffin, alt: "Paniyaram, Mysore bonda and filter coffee" },
+  { src: traditionalSweets, alt: "Badam halwa and traditional Indian sweets" },
+  { src: chaatStall, alt: "Pani puri wedding food counter" },
+  { src: roti, alt: "Fresh naan and chapathi" },
+  { src: desserts, alt: "Gulab jamun and Mysore pak" },
+  { src: soupsJuices, alt: "Fresh juices and sweet corn soup" },
+  { src: snackStall, alt: "Pav bhaji live food counter" },
+  { src: liveCounters, alt: "Chocolate fountain and wedding dessert counter" },
+];
 export const navigation = [
   { label: "Home", to: "/" },
   { label: "Our story", to: "/about" },
@@ -56,7 +81,7 @@ export const menus = [
     subtitle: "A celebration on every leaf.",
     description:
       "Traditional vegetarian catering, thoughtfully planned around your celebration and the people who make it special.",
-    image: bananaLeaf,
+    image: lunch,
     tag: "OUR SPECIALITY",
     items: [
       "Vegetable biryani",
@@ -76,7 +101,7 @@ export const menus = [
     subtitle: "An evening of generous hospitality.",
     description:
       "A satisfying vegetarian spread shaped to the style, scale and timing of your evening celebration.",
-    image: feast,
+    image: dinner,
     tag: "CELEBRATION EVENINGS",
     items: [
       "Gobi 65",
@@ -96,7 +121,7 @@ export const menus = [
     subtitle: "Familiar flavours, thoughtfully served.",
     description:
       "Flexible selections for evening tiffin, refreshments and the smaller moments within a larger celebration.",
-    image: breakfast,
+    image: tiffin,
     tag: "MADE FOR YOUR OCCASION",
     items: [
       "Carrot halwa",
@@ -116,7 +141,7 @@ export const menus = [
     subtitle: "A generous centrepiece for every spread.",
     description:
       "Choose from traditional rice preparations and celebration favourites to complement your menu.",
-    image: bananaLeaf,
+    image: dinner,
     tag: "RICE VARIETIES",
     items: [
       "Vegetable biryani",
@@ -135,7 +160,7 @@ export const menus = [
     subtitle: "Classic gravies and modern favourites.",
     description:
       "A wide selection of paneer, vegetable and North Indian accompaniments for roti and rice.",
-    image: feast,
+    image: dinner,
     tag: "SABJI VARIETIES",
     items: [
       "Malai kofta",
@@ -155,7 +180,7 @@ export const menus = [
     subtitle: "Freshly made for the feast.",
     description:
       "Traditional flatbreads and tandoor favourites can be paired with your chosen sabji selection.",
-    image: event,
+    image: roti,
     tag: "ROTI VARIETIES",
     items: [
       "Roti",
@@ -178,7 +203,7 @@ export const menus = [
     subtitle: "A memorable final note.",
     description:
       "Traditional sweets and dessert choices can be discussed as part of your personalised celebration menu.",
-    image: feast,
+    image: desserts,
     tag: "A SWEET FINISH",
     items: [
       "Badam halwa",
@@ -200,7 +225,7 @@ export const menus = [
     subtitle: "Refreshing choices for every season.",
     description:
       "Complete the occasion with warming soups, fresh juices and traditional milk-based refreshments.",
-    image: event,
+    image: soupsJuices,
     tag: "REFRESHMENTS",
     items: [
       "Vegetable soup",
@@ -223,7 +248,7 @@ export const menus = [
     subtitle: "Lively counters your guests can explore.",
     description:
       "Add an interactive layer to the celebration with familiar chaat and snack-stall favourites.",
-    image: event,
+    image: chaatStall,
     tag: "LIVE FOOD STALLS",
     items: [
       "Pani puri",
@@ -244,7 +269,7 @@ export const menus = [
     subtitle: "More ways to welcome your guests.",
     description:
       "Ask our team about live counters, beverages and event add-ons that may suit your occasion.",
-    image: event,
+    image: liveCounters,
     tag: "CUSTOMISED FOR YOU",
     items: [
       "Fresh juice",

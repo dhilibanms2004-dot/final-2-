@@ -6,7 +6,6 @@ import { EventCTA, FAQ, Stats } from "../components/sections/Shared";
 import { Reviews } from "../components/sections/Reviews";
 import { MenuExplorer } from "../components/sections/MenuExplorer";
 import { images } from "../content/site";
-import weddingHero from "../assets/sa-catering-hero.jpg";
 export const Route = createFileRoute("/")({
   component: Home,
   head: () => pageHead("/"),
@@ -17,10 +16,10 @@ function Home() {
       <section className="hero immersive-hero" aria-labelledby="hero-title">
         <img
           className="hero-backdrop"
-          src={weddingHero}
+          src={images.event}
           alt="Illustrative South Indian wedding dining scene with a vegetarian banana-leaf feast"
-          width={1920}
-          height={1088}
+          width={1536}
+          height={1024}
           fetchPriority="high"
         />
         <div className="hero-shade" aria-hidden="true" />

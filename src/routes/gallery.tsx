@@ -2,7 +2,7 @@ import { pageHead } from "../lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "../components/site/SiteLayout";
 import { EventCTA, PageIntro } from "../components/sections/Shared";
-import { images } from "../content/site";
+import { galleryImages } from "../content/site";
 export const Route = createFileRoute("/gallery")({
   component: Gallery,
   head: () => pageHead("/gallery"),
@@ -23,15 +23,10 @@ function Gallery() {
         A little inspiration for the celebration you’re imagining.
       </PageIntro>
       <div className="container gallery-grid">
-        {[
-          [images.feast, "A celebration on every leaf"],
-          [images.breakfast, "The warmth of a South Indian morning"],
-          [images.bananaLeaf, "Tradition, beautifully served"],
-          [images.event, "Imagine your next celebration"],
-        ].map(([src, title]) => (
-          <figure key={title} data-reveal>
-            <img src={src} alt={title} loading="lazy" />
-            <figcaption>{title}</figcaption>
+        {galleryImages.map(({ src, alt }) => (
+          <figure key={src} data-reveal>
+            <img src={src} alt={alt} width={1536} height={1024} loading="lazy" />
+            <figcaption>{alt}</figcaption>
           </figure>
         ))}
       </div>
